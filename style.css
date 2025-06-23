@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(#14269d, #56c12b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overallContainer{
+    width: 100vh;
+    height: 100vh;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(#77ae62, #414fad);
+    border-radius: 5px;
+}
+
+.main{
+    margin: auto;
+    padding-top: 10%;
+}
+
+.form{
+    text-align: center;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+label{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+input[type = "text"]{
+    margin-top: 20px;
+    width: 90%;
+    height: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+input[type = "submit"]{
+    margin: auto;
+    background: linear-gradient(#77ae62, #414fad);
+    margin-top: 20px;
+    width: 40%;
+    height: 50px;
+    color: white;
+    border: none;
+    display: block;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+input[type = "submit"]:hover{
+    background-color: #04214c;
+}
+
+.weather{
+    margin-top: 2em;
+    text-align: center;
+    background:  linear-gradient(#77ae62, #414fad);
+    border-radius:  3px;
+    width: 300px;
+    color: #16a864;
+    position: relative;
+    left: 25%;
+}
+
+.container{
+    background: linear-gradient(#77ae62, #414fad);
+    height: 45vh;
+    border-radius: 5px;
+}
+
+.container h2{
+    padding: 5px 0;
+    text-align: center;
+    
+    color: white;
+    font-family: sans-serif;
+}
+
+.container p{
+    margin:20px 50px;
+    margin-right: 20px;
+    text-align: left;
+    color: #04214c;
+    font-size:23px;
+}
+
+.container h2 span{
+    font-size: 26px;
+    color: #9beefb;
+}
+
+.container p span{
+    color: #0df466;
+    font-size: 25px;
+}
+
+@media(max-width: 768px){
+    .overallContainer{
+    width: 600px ;
+    height: 700px;
+    }
+
+    .weather{
+        width: 400px;
+        position: relative;
+        left: 17%;
+    }
+
+    .container{
+        background-color: rgba(27, 27, 255, 0.9);;
+        height: 45vh;
+        border-radius: 5px;
+    }
+}
+
+
+@media(max-width: 480px){
+    .overallContainer{
+        width: 350px ;
+        height: 700px;
+    }
+
+    .form{
+        width: 270px;
+        height: 230px;
+    }
+
+    input[type = "text"]{
+        width: 85%;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    input[type = "submit"]{
+        width: 40%;
+        height: 30px;
+        margin-top: 50px;
+    }
+
+    .weather{
+            width: 280px;
+            position: relative;
+            left: 11%;
+    }
+        
+    .container{
+            height: 45vh;
+    }
+        
+    .container p{
+            font-size: 18px;
+    }
+        
+    .container h2 span{
+            font-size: 26px;
+    }
+        
+    .container p span{
+            font-size: 15px;
+    }
+}
